@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#000000">
+        <meta property="og:title" content="6K">
+        <meta property="og:description" content="homepage">
+        <title>6K - homepage</title>
+        <link rel="shortcut icon" href="./img/nicon.png"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="floating-card light info">
+                <h1>6K</h1>
+                <p>Welcome to my homepage! All of my social links are below.</p>
+                <p>
+                    <a class="small-text" href="https://youtu.be/DuDX6wNfjqc?t=319">
+                        background source
+                    </a>
+                </p>
+                <div class="links">
+                    <div class="social-icons">
+                        <a style="color:#ffffff" href="https://github.com/6K6666">
+                            <i class="fab fa-github"></i>
+                            <span class="tooltip">GitHub</span>
+                        </a>
+                        <a style="color:#7289DA" href="https://discord.com/users/786891541557018624">
+                            <i class="fab fa-discord"></i>
+                            <span class="tooltip">Discord Account</span>
+                        </a>
+                        <a rel="me" style="color:#1DA1F2" href="https://twitter.com/iastsznn">
+                            <i class="fab fa-twitter"></i>
+                            <span class="tooltip">Twitter</span>
+                        </a>
+                        <a style="color:#FF4500" href="https://www.reddit.com/user/lastsznn">
+                            <i class="fab fa-reddit"></i>
+                            <span class="tooltip">Reddit</span>
+                        </a>
+                        <a style="color:#ffffff" href="https://steamcommunity.com/id/6K6000">
+                            <i class="fab fa-steam"></i>
+                            <span class="tooltip">Steam</span>
+                        </a>
+                        <a style="color:#b90000" href="https://www.last.fm/user/lastsznn">
+                            <i class="fab fa-lastfm-square"></i>
+                            <span class="tooltip">Last.fm</span>
+                        </a>
+                        <a style="color:#f0660b" href="https://blockchair.com/bitcoin/address/bc1qp2w7w6ccm0x3yhlgqp6gemzs0z6r0h0a8xsrve">
+                            <i class="fab fa-bitcoin"></i>
+                            <span class="tooltip">Bitcoin Address</span>
+                        </a>
+                        <a class="right" href="./cdn">
+                            <i class="fas fa-cloud"></i>
+                            <span class="tooltip">Image Uploader</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+<script>
+      function aud_play_pause() {
+  var myAudio = document.getElementById("myTune");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+    </script>
+    <div style = "position:absolute; bottom:0px; right:0px">
+    <button style="background-color:black; border-color:black; color:white"onclick="aud_play_pause()">Play/Pause Music</button>
+    <audio id="myTune" src="https://cdn.discordapp.com/attachments/770496591923773450/814034081717026826/mysound.mp3"></audio>
+
+</html>
