@@ -12,14 +12,47 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="/css/style.css">
+            
+        <script>
+        const SITE_NAME = document.title;
+        const TIME = 0.3 * 1000;
+
+        const yield = seconds => new Promise(_ => setTimeout(_, seconds));
+        async function init() {
+            await yield(TIME * 4);
+            for (let s = SITE_NAME.length; s >= 0; s--) {
+                let newTitle = SITE_NAME.substr(0, s);
+                if (s === 0) newTitle = "_";
+                    
+                document.title = newTitle;
+                await yield(TIME);
+            }
+            
+            await yield(TIME);
+            for (let s = 0; s <= SITE_NAME.length; s++) {
+                let newTitle = SITE_NAME.substr(0, s);
+                if (s === 0) newTitle = "_";
+                    
+                document.title = newTitle;
+                await yield(TIME);
+            }
+
+            init();
+        }
+
+            init();
+        </script>
     </head>
+
+    
+    
     <body>
         <div class="overlay">
             <div class="floating-card light info">
                 <h1>6K</h1>
                 <p>Welcome to my homepage! All of my social links are below.</p>
                 <p>
-                    <a class="small-text" href="https://youtu.be/DuDX6wNfjqc?t=319">
+                    <a class="small-text" href="https://cdn.discordapp.com/attachments/770496591923773450/816921047508713502/Snowfall_in_Forest_FREE_Motion_Background_Animation_-_4K.mp4">
                         background source
                     </a>
                 </p>
@@ -57,11 +90,19 @@
                             <i class="fas fa-cloud"></i>
                             <span class="tooltip">Image Uploader</span>
                         </a>
+                        <a class="right" href="./selfbot/home.html">
+                            <i class="fas fa-robot"></i>
+                            <span class="tooltip">Looking for Ascension?</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+
+    <video poster="screenshot.jpg" autoplay playsinline muted loop>
+        <source src="https://cdn.discordapp.com/attachments/770496591923773450/816921047508713502/Snowfall_in_Forest_FREE_Motion_Background_Animation_-_4K.mp4" type="video/mp4">
+      </video>
 
 <script>
       function aud_play_pause() {

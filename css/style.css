@@ -3,7 +3,6 @@
     --pink-translucent: rgba(0, 0, 0, 0);
     --white: #ffffff;
     --black: #000000;
-    --background: url('../img/background.png');
     --shadow: -3px 6px 24px hsla(328.6, 41.2%, 10%, 0.4);
 }
 
@@ -19,7 +18,16 @@ html, body {
 }
 
 body {
-    background: var(--background) 0 / cover fixed;
+    font-family: sans-serif;
+  }
+  video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 ul {
