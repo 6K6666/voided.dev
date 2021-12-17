@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "dafont";
+    src: url("https://www.voided.dev/resources/dafont/daft_font-webfont.eot");
+    src: url("https://www.voided.dev/resources/dafont/daft_font-webfont.woff") format("woff"),
+    url("https://www.voided.dev/resources/dafont/daft_font-webfont.otf") format("opentype"),
+    url("https://www.voided.dev/resources/dafont/daft_font-webfont.svg#filename") format("svg");
+    }
+
 :root {
     --pink: #000000;
     --pink-translucent: rgba(0, 0, 0, 0);
@@ -20,6 +28,7 @@ html, body {
 body {
     font-family: sans-serif;
     background-color:black;
+    background-image: url("https://voided.dev/cdn/POWA6/kaCoTUgA34.jpg/raw")
   }
   video {
     width: 100vw;
@@ -50,6 +59,7 @@ li {
     min-height: 100%;
 }
 
+
 .floating-card {
     position: relative;
     min-width: 30%;
@@ -58,6 +68,7 @@ li {
     border-radius: 12px;
     box-shadow: var(--shadow);
 }
+
 
 .floating-card.light {
     color: var(--white);

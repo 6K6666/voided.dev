@@ -1,10 +1,10 @@
 	// curious as to how this works, yes?
 	// var discord_id = "YOUR_ID";
-	// Credits: Azariel#0004 & Roka#1337
+	// Credits: Azariel#0004 & 6K#6666
 	// also replace #spotify with Class ID
 	// Documentation: https://github.com/phineas/lanyard
 
-	var discord_id = "786902185178955776";
+	var discord_id = "786891541557018624";
 
     function updateStats() {
                     $.getJSON("https://api.lanyard.rest/v1/users/" + discord_id, (data) => {
